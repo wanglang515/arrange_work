@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/edit_year"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:hint="年"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/edit_month"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:hint="月"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/edit_day"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:hint="日"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/button_start_all_plan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全排班" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text_out_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" />
+
+            <ProgressBar
+                android:id="@+id/load_arrange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
